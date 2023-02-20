@@ -233,6 +233,7 @@ td:nth-child(6) {
 }
 .checked-active {
   background-color: #3a4cc2;
+  border: none;
 }
 
 .tr-active {

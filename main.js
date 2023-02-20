@@ -100,6 +100,7 @@ tbody.addEventListener('click', (e) => {
       title.childNodes[1].textContent = 'Nutrition'
       filterBtn.style.display = 'block'
       deletBtn.style.display = 'none'
+      checkBtnAll.style.display = 'block'
       selectedItem()
     }
   }
@@ -155,7 +156,7 @@ all.addEventListener('click', () => {
     checkBtnAll.style.backgroundColor = 'blue';
     all.style.display = 'none'
     checkBtnAll.style.display = 'block'
-    for (let i = 0; i < col; i++) {
+    for (let i = 0; i < row; i++) {
       products[i].check = true
     }
     selectedItem()
@@ -173,7 +174,7 @@ deletBtn.addEventListener('click', () => {
   deletBtn.style.display = 'none';
   checkBtnAll.style.display = 'none';
   all.style.backgroundColor = 'transparent'
-  let s = col + truthy.length;
+  let s = row + truthy.length;
   let ss = s - products.length;
   console.log(ss);
   for (let i = 0; i < ss; i++) {
